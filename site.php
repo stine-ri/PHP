@@ -276,6 +276,50 @@
                 $index++;
             }
          ?>
+         <!-- do while loop -->
+          <?php
+             $index=1;
+             do{
+                 echo "$index <br>";
+                 $index++;
+             } while($index <=5);
+         ?>
+         <!-- for loop -->
+          <?php
+             for($index=1; $index<=5; $index++){
+                 echo "$index <br>";
+             }
+          ?>
+         <!-- nested loops -->
+          <?php
+             for($i=1; $i<=5; $i++){
+                 echo "Outer loop: $i <br>";
+                 for($j=1; $j<=5; $j++){
+                     echo "Inner loop: $j <br>";
+                 }
+             }
+          ?>
+         <!-- include -->
+          <?php
+             include "header.html";
+             echo "Welcome to my website! <br>";
+             include "footer.html";
+         ?>
+         <!-- include php -->
+          <?php
+          $title = "Welcome to my website";
+          $author ="Ritan";
+          $wordCount=300;
+          include "header.php";
+             
+         ?>
+         <!-- require -->
+          <?php
+             require "header.php";
+             echo "Welcome to my website! <br>";
+             require "footer.html";
+         ?>
+
 </body>
 </html>
 
